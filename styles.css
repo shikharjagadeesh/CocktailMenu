@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;700&family=Sora:wght@500;700&display=swap");
+
+:root {
+  --bg: #0d1217;
+  --bg-glow: #151d25;
+  --text: #e6edf3;
+  --text-soft: #a9b5c2;
+  --panel: #131b24;
+  --accent: #f0a94f;
+  --accent-soft: #2a3645;
+  --line: #2f3a47;
+  --chip: #1b2530;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 15% 0%, #1c2732 0%, var(--bg-glow) 28%, var(--bg) 75%);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  min-height: 106px;
+  padding: 0.85rem 1.2rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(13, 18, 23, 0.92);
+  backdrop-filter: blur(7px);
+}
+
+.brand {
+  font-family: "Sora", "Manrope", sans-serif;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 132px;
+  width: auto;
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+  margin-left: auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 19px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 99px;
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.site-nav a {
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  color: var(--text);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 0.93rem;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--line);
+}
+
+.page {
+  width: min(860px, 92vw);
+  margin: 1.5rem auto 3rem;
+}
+
+.hero {
+  margin-bottom: 1.2rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-size: 0.82rem;
+}
+
+h1 {
+  margin: 0.3rem 0 0.2rem;
+  font-family: "Sora", "Manrope", sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.update-note {
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
+.update-note code {
+  font-family: "IBM Plex Mono", monospace;
+  color: var(--accent);
+}
+
+.menu-section,
+.content-card {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  padding: 1rem 0 0;
+  margin-bottom: 1.15rem;
+}
+
+.menu-section h2 {
+  margin: 0 0 0.85rem;
+  font-family: "Sora", "Manrope", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.drink-list {
+  display: grid;
+  gap: 0;
+}
+
+.drink-card {
+  border: 0;
+  border-radius: 0;
+  padding: 0.85rem 0;
+  background: transparent;
+}
+
+.drink-card:last-child {
+  border-bottom: 0;
+}
+
+.drink-name {
+  margin: 0 0 0.25rem;
+  font-family: "Sora", "Manrope", sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 1.22rem;
+}
+
+.drink-description {
+  margin: 0 0 0.4rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.97rem;
+  color: #c3ced8;
+}
+
+.drink-ingredients {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.86rem;
+  color: #8fa1b3;
+}
+
+.section-block {
+  margin-bottom: 1.15rem;
+}
+
+.bottle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.bottle-column {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.85rem 0 0;
+}
+
+.bottle-column h2 {
+  margin: 0 0 0.6rem;
+  font-family: "Sora", "Manrope", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.liquor-type-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.liquor-type {
+  padding-bottom: 0.75rem;
+}
+
+.liquor-type:last-child {
+  padding-bottom: 0;
+}
+
+.liquor-type h3 {
+  margin: 0;
+  padding: 0.1rem 0 0.35rem;
+  font-family: "Sora", "Manrope", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.bottle-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.1rem;
+}
+
+.bottle-column li {
+  padding: 0.12rem 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #d5dfe8;
+}
+
+.bottle-column li:last-child {
+  border-bottom: 0;
+}
+
+.order-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.order-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  font-family: "Manrope", sans-serif;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  border: 1px solid #455463;
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  font: inherit;
+  color: var(--text);
+  background: #17212b;
+}
+
+.order-form button {
+  width: max-content;
+  border: 0;
+  border-radius: 999px;
+  font-family: "Sora", "Manrope", sans-serif;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    min-height: 53px;
+    padding: 0.425rem 1.2rem;
+  }
+
+  .brand img {
+    height: 66px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 0.25rem;
+    justify-content: flex-start;
+    gap: 0.35rem;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .site-nav a {
+    width: 100%;
+    border-radius: 9px;
+    padding: 0.55rem 0.65rem;
+  }
+
+  .bottle-grid {
+    grid-template-columns: 1fr;
+  }
+}
