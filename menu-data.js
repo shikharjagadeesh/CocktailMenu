@@ -3,9 +3,9 @@ window.MENU_SECTIONS = [
     title: "Signature Cocktails",
     drinks: [
       {
-        name: "Citron Meringue",
-        description: "Lemony custard richness, velvety body.",
-        ingredients: ["brown butter vodka", "lemon juice", "vanilla syrup", "lemon curd", "milk"],
+        name: "Oolong-ing",
+        description: "Tea-forward, mellow, bright citrus.",
+        ingredients: ["japanese whiskey", "umeshu", "milk oolong", "lemon", "milk"],
       },
       {
         name: "French Toast",
@@ -18,9 +18,9 @@ window.MENU_SECTIONS = [
         ingredients: ["gin", "plum i suppose", "wintermelon", "lime", "heavy cream", "egg white", "club soda"],
       },
       {
-        name: "Oolong-ing",
-        description: "Tea-forward, mellow, bright citrus.",
-        ingredients: ["japanese whiskey", "umeshu", "milk oolong", "lemon", "milk"],
+        name: "Citron Meringue",
+        description: "Lemony custard richness, velvety body.",
+        ingredients: ["brown butter vodka", "lemon juice", "vanilla syrup", "lemon curd", "milk"],
       },
       {
         name: "Sesame Cheesecake",
@@ -38,19 +38,54 @@ window.MENU_SECTIONS = [
     title: "Classics",
     drinks: [
       {
-        name: "Negroni",
-        description: "Bitter, herbal, and perfectly balanced.",
-        ingredients: ["gin", "campari", "sweet vermouth", "orange peel"],
+        name: "White Noise",
+        description: "Floral aperitif sparkle, crisp finish.",
+        ingredients: ["cocchi americano", "elderflower liqueur", "jasmine liqueur", "soda"],
       },
       {
-        name: "Whiskey Sour",
-        description: "Tangy citrus, mellow whiskey backbone.",
-        ingredients: ["whiskey", "lemon juice", "simple syrup", "egg white (optional)"],
+        name: "Banana Hammock",
+        description: "Nutty banana citrus island sour.",
+        ingredients: ["rum", "orgeat", "creme de banane", "lime"],
       },
       {
-        name: "Mojito",
-        description: "Minty, sparkling, ultra-refreshing rum highball.",
-        ingredients: ["white rum", "mint", "lime", "sugar", "soda water"],
+        name: "Velvet Peel",
+        description: "Rich banana spirit-forward silky sip.",
+        ingredients: ["cognac", "dark rum", "creme de banane", "banana"],
+      },
+      {
+        name: "Bamboo Grove",
+        description: "Bright yuzu nutty matcha depth.",
+        ingredients: ["gin", "yuzu", "orgeat", "matcha"],
+      },
+      {
+        name: "Corny Margarita",
+        description: "Toasty corn citrus agave snap.",
+        ingredients: ["tequila", "nixta corn liqueur", "lime", "agave"],
+      },
+      {
+        name: "Last Word",
+        description: "Herbal cherry citrus classic balance.",
+        ingredients: ["gin", "maraschino liqueur", "luxardo del santo", "lime"],
+      },
+      {
+        name: "Chocolate Negroni",
+        description: "Bitter chocolate botanical stirred classic.",
+        ingredients: ["gin", "campari", "sweet vermouth", "creme de cacao"],
+      },
+      {
+        name: "Green Negroni",
+        description: "Herbal melon bittersweet green profile.",
+        ingredients: ["gin", "dry vermouth", "cocchi americano", "midori", "green chartreuse"],
+      },
+      {
+        name: "Lychee Negroni",
+        description: "Floral lychee bittersweet aromatic twist.",
+        ingredients: ["gin", "shochu", "elderflower liqueur", "lychee liqueur", "vermouth"],
+      },
+      {
+        name: "Tokyo Tea +",
+        description: "Bold multi-spirit citrus melon fizz.",
+        ingredients: ["rum", "gin", "tequila", "mezcal", "midori", "yuzu", "agave", "soda"],
       },
     ],
   },
