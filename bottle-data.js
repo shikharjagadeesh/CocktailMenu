@@ -1,41 +1,91 @@
 window.BOTTLE_LIST = {
   liquorTypes: [
     {
-      type: "Bourbon",
-      bottles: ["Buffalo Trace", "Woodford Reserve"],
-    },
-    {
-      type: "Rye Whiskey",
-      bottles: ["Bulleit Rye"],
-    },
-    {
       type: "Tequila",
-      bottles: ["Espolon Blanco", "Casamigos Reposado"],
-    },
-    {
-      type: "Rum",
-      bottles: ["Plantation 3 Stars", "Diplomatico Reserva Exclusiva"],
+      bottles: ["Suerte Tequila Blanco"],
     },
     {
       type: "Gin",
-      bottles: ["Tanqueray London Dry"],
+      bottles: ["Fords London Dry Gin", "Oka Japanese Gin"],
+    },
+    {
+      type: "Rum",
+      bottles: [
+        "Cacao Nib Rum",
+        "Copalli Aged Rum",
+        "Planteray Original Dark Rum",
+        "Probitas White Blended Rum",
+        "Smith & Cross Jamaica Rum",
+      ],
+    },
+    {
+      type: "Cognac",
+      bottles: ["Hine Cognac"],
     },
     {
       type: "Vodka",
-      bottles: ["Tito's Handmade Vodka"],
+      bottles: ["Oka Japanese Vodka"],
     },
     {
-      type: "Liqueurs And Fortified",
-      bottles: ["Campari", "Carpano Antica Formula"],
+      type: "Shochu",
+      bottles: ["Daiyame Shochu", "Iichiko Saiten Shochu", "Iichiko Shochu"],
+    },
+    {
+      type: "Whiskey And Bourbon",
+      bottles: ["Suntory Toki Whisky", "Wild Turkey 101 Bourbon"],
+    },
+    {
+      type: "Scotch",
+      bottles: ["Laphroaig Islay Single Malt Scotch Whisky"],
+    },
+    {
+      type: "Liqueurs",
+      bottles: [
+        "Amaro Meletti",
+        "Borghetti Espresso Liqueur",
+        "Cointreau",
+        "Creme de Cacao",
+        "Drillaud White Creme de Cacao",
+        "Frangelico Hazelnut Liqueur",
+        "Giffard Lichi-Li Liqueur",
+        "Giffard Vanille de Madagascar Liqueur",
+        "Grand Marnier Orange Liqueur",
+        "Green Chartreuse",
+        "Licor 43",
+        "Luxardo Del Santo Herbal Liqueur",
+        "Luxardo Maraschino Liqueur",
+        "Midori Melon Liqueur",
+        "Mr. Black Cold Brew Coffee Liqueur",
+        "Nixta Corn Liqueur",
+        "Oka Yuzu Liqueur",
+        "Pistachio Creme Liqueur",
+        "Rothman & Winter Orchard Peach Liqueur",
+        "St-Germain Elderflower Liqueur",
+        "Tempus Fugit Creme de Banane",
+        "Tempus Fugit Creme de Moka",
+        "Umenoyado Green Tea Umeshu",
+      ],
+    },
+    {
+      type: "Aperitifs",
+      bottles: [
+        "Campari",
+        "Cocchi Americano",
+        "Dolin Sweet Vermouth",
+        "Don Zoilo Oloroso Sherry",
+        "Lillet Blanc",
+        "Oka Kura Japanese Bermutto Sake Vermouth",
+      ],
+    },
+    {
+      type: "Miscellaneous",
+      bottles: ["Empirical Spirit The Plum, I Suppose", "La Muse Verte Absinthe"],
     },
   ],
   syrups: [
     "Simple Syrup",
-    "Demerara Syrup",
-    "Honey Syrup",
-    "Agave Syrup",
-    "Ginger Syrup",
-    "Cinnamon Syrup",
     "Vanilla Syrup",
+    "Strawberry Syrup",
+    "Wintermelon Syrup",
   ],
 };
