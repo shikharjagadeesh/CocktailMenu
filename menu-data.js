@@ -89,19 +89,16 @@ window.MENU_SECTIONS = [
       },
     ],
   },
-  {
-    title: "Zero Proof",
-    drinks: [
-      {
-        name: "Citrus Sparkler",
-        description: "Zesty, bubbly, clean and uplifting.",
-        ingredients: ["orange juice", "lime juice", "tonic", "mint"],
-      },
-      {
-        name: "Ginger Fizz",
-        description: "Spicy ginger zip, bright lemon.",
-        ingredients: ["ginger beer", "lemon juice", "mint", "simple syrup"],
-      },
-    ],
-  },
 ];
+
+window.SECRET_MENU = {
+  password: "noodles",
+  title: "Secret Menu",
+  drinks: [
+    {
+      name: "Japanese Cold Noodle",
+      description: "Tropical savory citrus refreshing profile.",
+      ingredients: ["white rum", "coconut", "pineapple", "cucumber", "lime", "sesame"],
+    },
+  ],
+};

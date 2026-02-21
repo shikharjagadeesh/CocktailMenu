@@ -1,4 +1,5 @@
 const menuRoot = document.querySelector("#menu-root");
+const secretMenuRoot = document.querySelector("#secret-menu-root");
 const bottleRoot = document.querySelector("#bottle-root");
 const archivesRoot = document.querySelector("#archives-root");
 const menuToggle = document.querySelector(".menu-toggle");
@@ -49,6 +50,52 @@ if (menuRoot) {
     `
     )
     .join("");
+}
+
+if (secretMenuRoot) {
+  const secretMenu = window.SECRET_MENU || {};
+  const title = safeText(secretMenu.title) || "Secret Menu";
+  const password = safeText(secretMenu.password);
+  const drinks = Array.isArray(secretMenu.drinks) ? secretMenu.drinks : [];
+
+  secretMenuRoot.innerHTML = `
+    <section class="menu-section section-block secret-menu-section">
+      <h2>${title}</h2>
+      <div class="secret-lock">
+        <label for="secret-password">Password</label>
+        <div class="secret-lock-row">
+          <input id="secret-password" type="password" autocomplete="off" />
+          <button id="secret-unlock" type="button">Unlock</button>
+        </div>
+        <p id="secret-error" class="secret-error" hidden>Incorrect password.</p>
+      </div>
+      <div id="secret-drink-list" class="drink-list" hidden></div>
+    </section>
+  `;
+
+  const input = secretMenuRoot.querySelector("#secret-password");
+  const unlockButton = secretMenuRoot.querySelector("#secret-unlock");
+  const error = secretMenuRoot.querySelector("#secret-error");
+  const drinkList = secretMenuRoot.querySelector("#secret-drink-list");
+  const lockSection = secretMenuRoot.querySelector(".secret-lock");
+
+  if (input && unlockButton && error && drinkList && lockSection) {
+    const tryUnlock = () => {
+      if (input.value === password) {
+        drinkList.innerHTML = drinks.map((drink) => renderDrinkCard(drink)).join("");
+        lockSection.hidden = true;
+        drinkList.hidden = false;
+        error.hidden = true;
+        return;
+      }
+      error.hidden = false;
+    };
+
+    unlockButton.addEventListener("click", tryUnlock);
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") tryUnlock();
+    });
+  }
 }
 
 if (bottleRoot) {
