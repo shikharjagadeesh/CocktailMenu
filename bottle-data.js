@@ -75,11 +75,17 @@ window.BOTTLE_LIST = {
         "Don Zoilo Oloroso Sherry",
         "Lillet Blanc",
         "Oka Kura Japanese Bermutto Sake Vermouth",
+        "Suze",
       ],
     },
     {
       type: "Miscellaneous",
-      bottles: ["Empirical Spirit The Plum, I Suppose", "La Muse Verte Absinthe"],
+      bottles: [
+        "Empirical Spirit The Plum, I Suppose",
+        "Empirical Spirits Stonefruit",
+        "La Muse Verte Absinthe",
+        "Yuzu Sake",
+      ],
     },
   ],
   syrups: [

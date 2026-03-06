@@ -18,19 +18,24 @@ window.MENU_SECTIONS = [
         ingredients: ["gin", "plum i suppose", "wintermelon", "lime", "heavy cream", "egg white", "club soda"],
       },
       {
+        name: "Yuzu Negroni",
+        description: "Bright bitter citrus aromatic twist.",
+        ingredients: ["gin", "suze", "cocchi americano", "yuzu sake"],
+      },
+      {
         name: "Citron Meringue",
         description: "Lemony custard richness, velvety body.",
         ingredients: ["brown butter vodka", "lemon juice", "vanilla syrup", "lemon curd", "milk"],
       },
       {
-        name: "Sesame Cheesecake",
-        description: "Nutty creamy coffee dessert sip.",
-        ingredients: ["japanese whiskey", "orgeat", "cream cheese", "yogurt", "cold brew"],
-      },
-      {
         name: "Tea Ceremony",
         description: "Toasty cacao matcha old fashioned.",
         ingredients: ["nikka coffey grain whisky", "creme de cacao", "coconut water", "matcha"],
+      },
+      {
+        name: "Japanese Cold Noodle",
+        description: "Tropical savory citrus refreshing profile.",
+        ingredients: ["white rum", "coconut", "pineapple", "cucumber", "lime", "sesame"],
       },
     ],
   },
@@ -61,6 +66,11 @@ window.MENU_SECTIONS = [
         name: "Corny Margarita",
         description: "Toasty corn citrus agave snap.",
         ingredients: ["tequila", "nixta corn liqueur", "lime", "agave"],
+      },
+      {
+        name: "Sesame Whiskey Sour",
+        description: "Nutty citrus classic whiskey sour.",
+        ingredients: ["sesame oil washed whiskey", "lemon juice", "simple syrup", "egg white"],
       },
       {
         name: "Last Word",
