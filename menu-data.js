@@ -3,29 +3,9 @@ window.MENU_SECTIONS = [
     title: "Signature Cocktails",
     drinks: [
       {
-        name: "Oolong-ing",
-        description: "Tea-forward, mellow, bright citrus.",
-        ingredients: ["japanese whiskey", "umeshu", "milk oolong", "lemon", "milk"],
-      },
-      {
-        name: "French Toast",
-        description: "Toasty brunch vibes, silky finish.",
-        ingredients: ["vodka", "maple syrup", "brioche", "eggs", "milk", "coconut water"],
-      },
-      {
         name: "Key Lime Pie",
         description: "Creamy tart dessert cocktail energy.",
         ingredients: ["gin", "plum i suppose", "wintermelon", "lime", "heavy cream", "egg white", "club soda"],
-      },
-      {
-        name: "Yuzu Negroni",
-        description: "Bright bitter citrus aromatic twist.",
-        ingredients: ["gin", "suze", "cocchi americano", "yuzu sake"],
-      },
-      {
-        name: "Citron Meringue",
-        description: "Lemony custard richness, velvety body.",
-        ingredients: ["brown butter vodka", "lemon juice", "vanilla syrup", "lemon curd", "milk"],
       },
       {
         name: "Tea Ceremony",
@@ -33,9 +13,9 @@ window.MENU_SECTIONS = [
         ingredients: ["nikka coffey grain whisky", "creme de cacao", "coconut water", "matcha"],
       },
       {
-        name: "Japanese Cold Noodle",
-        description: "Tropical savory citrus refreshing profile.",
-        ingredients: ["white rum", "coconut", "pineapple", "cucumber", "lime", "sesame"],
+        name: "Yuzu Choco",
+        description: "Bright citrus cocoa with bitter herbal edges.",
+        ingredients: ["barley shochu", "yuzu sake", "creme de cacao", "suze"],
       },
     ],
   },
@@ -51,11 +31,6 @@ window.MENU_SECTIONS = [
         name: "Banana Hammock",
         description: "Nutty banana citrus island sour.",
         ingredients: ["rum", "orgeat", "creme de banane", "lime"],
-      },
-      {
-        name: "Velvet Peel",
-        description: "Rich banana spirit-forward silky sip.",
-        ingredients: ["cognac", "dark rum", "creme de banane", "banana"],
       },
       {
         name: "Bamboo Grove",
@@ -83,6 +58,11 @@ window.MENU_SECTIONS = [
         ingredients: ["gin", "campari", "sweet vermouth", "creme de cacao"],
       },
       {
+        name: "Yuzu Negroni",
+        description: "Bright bitter citrus aromatic twist.",
+        ingredients: ["gin", "suze", "cocchi americano", "yuzu sake"],
+      },
+      {
         name: "Green Negroni",
         description: "Herbal melon bittersweet green profile.",
         ingredients: ["gin", "dry vermouth", "cocchi americano", "midori", "green chartreuse"],
@@ -105,10 +85,5 @@ window.SECRET_MENU = {
   password: "noodles",
   title: "Secret Menu",
   drinks: [
-    {
-      name: "Japanese Cold Noodle",
-      description: "Tropical savory citrus refreshing profile.",
-      ingredients: ["white rum", "coconut", "pineapple", "cucumber", "lime", "sesame"],
-    },
   ],
 };
